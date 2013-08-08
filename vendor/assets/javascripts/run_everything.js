@@ -3,7 +3,10 @@
 $(function () {
     // Custom selects
     if($("select").length > 0) {
-        $("select").dropkick();    
+        $("select").each(function () {
+            $(this).dropkick();    
+        });
+        
     }
 });
 
